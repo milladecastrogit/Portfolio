@@ -1,89 +1,250 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="author" content="Camila de Castro Paranhos" />
-  <meta name="description" content="Portfólio de Desenvolvedora de Software - Camila Paranhos" />
-  <title>Portfólio | Camila Paranhos</title>
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="https://kit.fontawesome.com/9cf0e2491a.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#000000">
+    <title>Portfolio | Camila Paranhos</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <meta name="description" content="Portfólio de Desenvolvedora de Software - Camila Paranhos" />
+    <meta name="author" content="Camila de Castro Paranhos" />
+    <link rel="stylesheet" href="assets/imagens/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://kit.fontawesome.com/9cf0e2491a.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-  <!--teste-->
- 
-  <header id="inicio">
-    <img src="assets/imagens/foto-banner.png" alt="Banner Camila Paranhos" class="banner">
-    <nav>
-      <ul>
-        <li><a href="#inicio">Início</a></li>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#habilidades">Habilidades</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main class="container">
-    <section id="sobre">
-      <h2>Sobre Mim</h2>
-      <p>Sou Camila Paranhos, Técnica em Logística e Tecnóloga em Gestão Ambiental. Cursando Bacharelado em Ciência da Computação e Técnico em Desenvolvimento de Sistemas, para integrar tecnologia aos processos de otimização logísticos e sustentáveis.</p>
-    </section>
-
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <ul>
-        <li><i class="fa-solid fa-building-shield "></i> NutriConecta — Website</li>
-        <li><i class="fa-solid fa-building-shield "></i> Manutrix — Website</li>
-        <li><i class="fa-solid fa-building-shield "></i> Clinica Dr. Java - Website</li>
-      </ul>
-    </section>
-
-    <section id="habilidades">
-      <h2>Habilidades</h2>
-      <table>
-        <tr><th>Linguagem</th><th>Nível</th></tr>
-        <tr><td>C</td><td>Básico</td></tr>
-        <tr><td>JavaScript</td><td>Básico</td></tr>
-        <tr><td>HTML/CSS</td><td>Básico</td></tr>
-      </table>
-    </section>
-
-    <section id="contato" class="form-section">
-      <h2>Contato</h2>
-      <p>Email: milladecastro1309@gmail.com</p> 
-      <p>Telefone: (71) 99131-1250</p>
-      <form>
-        <label for="nome">Nome:</label><br />
-
-        <input type="text" id="nome" name="nome" required><br />
-
-
-        <label for="email">Email:</label><br />
-
-        <input type="email" id="email" name="email" required><br />
-
-
-        <label for="mensagem">Mensagem:</label><br />
-
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea><br />
-
-        <div id="divbutton">
-        <button type="submit">Enviar</button> 
-        <ul>
-        <li><a href="https://www.linkedin.com/in/camilacparanhos/"><i class="fa-brands fa-linkedin fa-beat-fade icone "></i></a></li>
-        <li><a href="https://github.com/milladecastro1309"><i class="fa-brands fa-square-github fa-beat-fade icone"></i></a></li>
-        <li><a href="https://www.instagram.com/milladcastro?igsh=MThxZG5kZG91ejRncA=="><i class="fa-brands fa-square-instagram fa-beat-fade icone"></i></a></li> 
-        </ul>
+    
+    <nav class="navbar">
+        <div class="nav-container">
+        
+            <div class="nav-brand">
+                
+                <span class="glow-text">Camila Paranhos</span>
+                <p  class="sub"> Desenvolvedora Jr.</p>                           
+                          
+            </div>
+            <div class="nav-menu">
+                <a href="#inicio" class="nav-link">Início</a>
+                <a href="#sobre" class="nav-link">Sobre</a>
+                <a href="#projetos" class="nav-link">Projetos</a>
+                <a href="#habilidades" class="nav-link">Habilidades</a>
+                <a href="#contato" class="nav-link">Contato</a>
+            </div>
         </div>
-      </form>
-    </section>
-  </main>
+    </nav>
 
-  <footer>
-    <p>&copy; 2025 Camila de Castro Paranhos</p>
-  </footer>
+        <section id="inicio" class="hero">
+        
+        <div class="hero-content">
+            <h1 class="hero-title glow-text">Camila Paranhos</h1>
+            
+            <p class="hero-subtitle">Desenvolvedora em assenção</p>
+            <p class="hero-description">
+                Transformando desafios em soluções através da programação, com base sólida em logística e foco na inovação tecnológica.
+            </p>
+            <div class="hero-buttons">
+                <a href="#projetos" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contato" class="btn btn-outline">Entre em Contato</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <h2 class="section-title glow-text">Sobre Mim</h2>
+            <div class="about-card">
+                <div class="about-image">
+                    <img src="assets/imagens/foto-perfil.jpg" Camila Paranhos class="about-image">
+                </div>
+                <div class="about-content">
+                    <p class="about-text">
+                        Olá, Sou Camila Paranhos, Técnica em Logística  e Tecnóloga em Gestão Ambiental. Atualmente cursando Ciência da Computação e Desenvolvimento de Sistemas, com projetos práticos já desenvolvidos. Me interessa, poder contribuir com projetos inovadores, soluções sustentáveis e tecnologias aplicadas à indústria e a sociedade.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projetos" class="projects">
+        <div class="container">
+            <h2 class="section-title glow-text">Projetos</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3 class="project-title">Clínica Dr. JavaScript</h3>
+                    <img alt="Clínica Dr. JavaScript" src="assets/imagens/foto-projeto-clinica.jpg" class = "project-imagem">
+                    <p class="project-description">
+                        Sistema de cadastro de pacientes com validações e formulários. 
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Currículo em HTML</h3>
+                    <img alt="Clínica Dr. JavaScript" src="assets/imagens/foto-cv.png" class  = "project-imagem">
+                    <p class="project-description">
+                        Currículo desenvolvido manualmente com HTML e estilização personalizada.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <h3 class="project-title">Módulo de Segurança em C</h3>
+                    <img alt="Clínica Dr. JavaScript" src="assets/imagens/foto-modulo.png" class = "project-imagem">
+                    <p class="project-description">
+                        Verificador de segurança e ergonomia para postos de trabalho, desenvolvido com lógica em C
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Linguagem C</span>
+                        <span class="tech-tag">Lógica</span>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="habilidades" class="skills">
+        <div class="container">
+            <h2 class="section-title glow-text">Habilidades</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="skill-title">Tecnologias</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 40%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SAP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="skill-title">Logística, Qualidade & Gestão</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Sistemas Integrados de Gestão</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 95%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PCP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Processos Logísticos</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%;">
+                                 
+                                </div>
+                            </div>
+                        </div>    
+                        <div class="skill-item">
+                            <span class="skill-name">Sustentabilidade</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%;"></div>
+                                </div>        
+                                </div>
+                         </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="contact">
+        <div class="container">
+            <h2 class="section-title glow-text">Contato</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Vamos conversar!</h3>
+                    <p>Entre em contato comigo através das redes sociais ou baixe meu currículo completo.</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/camilacparanhos" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/milladecastro1309" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.instagram.com/milla_decastro?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </div>
+                    
+                    <a href="https://milladecastro1309.github.io/cv-/" target="_blank" class="btn btn-primary cv-button">
+                        <i class="fas fa-download"></i>
+                        Currículo Completo para Impressão
+                    </a>
+                </div>
+                
+                <div class="contact-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Nome</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <a href="https://www.linkedin.com/in/camilacparanhos/"><i class="fa-brands fa-linkedin fa-beat-fade icone "></i></a>
+            <a href="https://github.com/milladecastro1309"><i class="fa-brands fa-square-github fa-beat-fade icone"></i></a>
+            <a href="https://www.instagram.com/milladcastro?igsh=MThxZG5kZG91ejRncA=="><i class="fa-brands fa-square-instagram fa-beat-fade icone"></i></a> 
+                
+            <p> &copy; 2025 Camila Paranhos. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
 </body>
 </html>
